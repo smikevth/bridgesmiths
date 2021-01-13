@@ -1,13 +1,15 @@
 body {
    width: 100%;
+   margin: 0;
    background-color: #bb9472;
    text-align: center;
+
 }
 
 #content {
    width: 70%;
    margin: auto;
-   padding-top: 5%;
+   padding: 5% 0;
 }
 
 #content .logo {
@@ -25,4 +27,22 @@ body {
 
 #content .email {
    font-size: 1.5vw;
+}
+
+@media(max-width: 1200px) {
+   #content h1 {
+      font-size: 2.7vw
+   }
+   #content .email {
+      font-size: 2.1vw;
+   }
+}
+
+@media(max-width: 900px) {
+   #content h1 {
+      font-size: 3.1vw;
+   }
+   #content .email {
+      font-size: 2.6vw;
+   }
 }
