@@ -20,13 +20,6 @@ p,h1,h2 {
    margin-bottom: 5%;
 }
 
-#content h2 {
-   text-transform: uppercase;
-   font-family: "Verdana", sans-serif;
-   font-weight: normal;
-   font-size: 1.25vw;
-}
-
 #content h1 {
    text-transform: uppercase;
    font-family: "Verdana", sans-serif;
@@ -35,16 +28,29 @@ p,h1,h2 {
    margin-bottom: 3%;
 }
 
+#content h2 {
+   text-transform: uppercase;
+   font-family: "Verdana", sans-serif;
+   font-weight: normal;
+   font-size: 1.25vw;
+}
+
+
+
 #content footer {
    font-size: 0.8vw;
+   position: fixed;
+   width: 100%;
+   bottom: 1vw;
+   left: 0;
 }
 
 @media(min-width: 1600px) {
-   #content h2 {
-      font-size: 1.25em;
-   }
    #content h1 {
       font-size: 2em;
+   }
+   #content h2 {
+      font-size: 1.25em;
    }
    #content footer {
       font-size: 0.8em;
@@ -52,11 +58,14 @@ p,h1,h2 {
 }
 
 @media(max-width: 1200px) {
-   #content h2 {
-      font-size: 1.7vw
+   #content {
+      width: 75%;
    }
    #content h1 {
       font-size: 2.7vw
+   }
+   #content h2 {
+      font-size: 1.7vw
    }
    #content footer {
       font-size: 1.3vw;
@@ -67,11 +76,11 @@ p,h1,h2 {
    #content h1 {
       font-size: 3.1vw;
    }
-   #content footer {
-      font-size: 2.6vw;
+   #content h2 {
+      font-size: 2.2vw;
    }
    #content footer {
-      font-size: 1.5vw;
+      font-size: 2vw;
    }
 }
 
@@ -81,6 +90,15 @@ p,h1,h2 {
    }
    #content .logo {
       margin-bottom: 4%;
+   }
+}
+
+
+@media(min-aspect-ratio: 29/18){
+   #content footer {
+      position: relative;
+      bottom: auto;
+      margin-top: 4%;
    }
 }
 
