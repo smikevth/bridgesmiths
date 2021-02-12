@@ -1,9 +1,12 @@
 body {
    width: 100%;
    margin: 0;
-   background-color: #bb9472;
+   background-color: #c09977;
    text-align: center;
+}
 
+p,h1,h2 {
+   margin: 0;
 }
 
 #content {
@@ -14,7 +17,14 @@ body {
 
 #content .logo {
    max-width: 100%;
-   margin-bottom: 2.5%;
+   margin-bottom: 5%;
+}
+
+#content h2 {
+   text-transform: uppercase;
+   font-family: "Verdana", sans-serif;
+   font-weight: normal;
+   font-size: 1.25vw;
 }
 
 #content h1 {
@@ -25,16 +35,31 @@ body {
    margin-bottom: 3%;
 }
 
-#content .email {
-   font-size: 1.5vw;
+#content footer {
+   font-size: 0.8vw;
+}
+
+@media(min-width: 1600px) {
+   #content h2 {
+      font-size: 1.25em;
+   }
+   #content h1 {
+      font-size: 2em;
+   }
+   #content footer {
+      font-size: 0.8em;
+   }
 }
 
 @media(max-width: 1200px) {
+   #content h2 {
+      font-size: 1.7vw
+   }
    #content h1 {
       font-size: 2.7vw
    }
-   #content .email {
-      font-size: 2.1vw;
+   #content footer {
+      font-size: 1.3vw;
    }
 }
 
@@ -42,7 +67,25 @@ body {
    #content h1 {
       font-size: 3.1vw;
    }
-   #content .email {
+   #content footer {
       font-size: 2.6vw;
+   }
+   #content footer {
+      font-size: 1.5vw;
+   }
+}
+
+@media(min-aspect-ratio: 16/9){
+   #content {
+      padding: 2.5% 0;
+   }
+   #content .logo {
+      margin-bottom: 4%;
+   }
+}
+
+@media(min-aspect-ratio: 19/9){
+   #content {
+      padding: 2% 0;
    }
 }
