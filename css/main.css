@@ -115,7 +115,7 @@ p,h1,h2 {
 }
 
 
-@media(min-aspect-ratio: 29/18){
+@media(min-aspect-ratio: 25/18){
    #content footer {
       position: relative;
       bottom: auto;
